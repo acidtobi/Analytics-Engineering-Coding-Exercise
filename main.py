@@ -63,7 +63,7 @@ print()
 ## Question 5: Query the view marketing and report the Costs per Install (CPI) on August 6, 2022, for campaign “google_campaign1”
 print("Question 5")
 cpi, = execute_sql_from_file(cursor, "question5.sql")[0]
-print("The CPI on on August 6, 2022, for campaign google_campaign1 was %.2f" % cpi)
+print("The CPI on August 6, 2022, for campaign google_campaign1 was %.2f" % cpi)
 print()
 
 cursor.close()
