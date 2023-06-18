@@ -13,8 +13,9 @@ def execute_sql_from_file(cursor, filename, fetch=True):
     with open(filename, 'r') as file:
         query = file.read()
 
+    cursor.execute(query)
+
     if fetch:
-        cursor.execute(query)
         return cursor.fetchall()
     else:
         return None
